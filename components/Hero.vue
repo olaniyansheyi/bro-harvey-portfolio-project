@@ -44,11 +44,11 @@ import heroFooterBgMobile from "~/public/img/hero-footer-img-mobile.png";
   <!-- mobile container -->
 
   <div
-    class="w-full h-screen hero-bg-mobile relative z-[1] flex justify-end items-end"
+    class="w-full h-[36rem] hero-bg-mobile relative z-[1] flex justify-end items-end"
   >
     <img class="z-[2]" :src="me" alt="" />
     <img
-      class="w-full absolute bottom-[-4%] left-0 right-0 z-[3]"
+      class="w-full absolute bottom-0 left-0 right-0 z-[3]"
       :src="heroFooterBgMobile"
       alt=""
     />
