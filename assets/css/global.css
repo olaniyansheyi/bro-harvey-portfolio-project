@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+body {
+  background-color: #d7d7d7;
+  color: black;
+}
