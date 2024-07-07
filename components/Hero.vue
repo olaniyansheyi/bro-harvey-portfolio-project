@@ -3,6 +3,9 @@ import at from "~/public/img/at.png";
 import github from "~/public/img/github.png";
 import linkdin from "~/public/img/linkdin.png";
 import me from "~/public/img/me.png";
+import linkdinWhite from "~/public/img/linkdin-white.png";
+import githubWhite from "~/public/img/github-white.png";
+import atWhite from "~/public/img/at-white.png";
 import heroFooterBgMobile from "~/public/img/hero-footer-img-mobile.png";
 </script>
 
@@ -52,11 +55,18 @@ import heroFooterBgMobile from "~/public/img/hero-footer-img-mobile.png";
       :src="heroFooterBgMobile"
       alt=""
     />
-    <div class="absolute bottom-5 right-5 left-6 text-white z-[4] flex gap-x-4">
+    <div
+      class="absolute bottom-5 right-5 left-6 text-white z-[4] items-center flex gap-x-4 justify-between"
+    >
       <div>
         <h3 class="tracking-wide font-semibold text-xl">Hi, I am</h3>
         <h1 class="tracking-wide font-bold text-3xl mt-1">Tomasz Gajda</h1>
         <p class="">Fron-end developer / UI Designer</p>
+      </div>
+      <div class="flex flex-col gap-y-6">
+        <img :src="atWhite" alt="" />
+        <img :src="linkdinWhite" alt="" />
+        <img :src="githubWhite" alt="" />
       </div>
     </div>
   </div>
