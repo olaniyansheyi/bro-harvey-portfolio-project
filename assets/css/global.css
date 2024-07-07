@@ -24,3 +24,10 @@ body {
   background-color: #d7d7d7;
   color: black;
 }
+.hero-bg {
+  position: relative;
+  background: linear-gradient(100deg, #d7d7d7 50%, black 50%);
+}
+.hero-bg-mobile {
+  background: linear-gradient(168deg, black 72.5%, #d7d7d7 72.5%);
+}

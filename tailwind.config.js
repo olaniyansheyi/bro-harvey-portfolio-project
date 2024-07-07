@@ -8,7 +8,14 @@ export default {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        heroSlantImg: "url('~/public/img/hero-slant-bg.png')",
+      },
+      colors: {
+        primary: "#909090",
+      },
+    },
   },
   plugins: [],
 };
