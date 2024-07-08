@@ -72,4 +72,22 @@ import heroFooterBgMobile from "~/public/img/hero-footer-img-mobile.png";
       </div>
     </div>
   </div>
+
+  <div
+    class="w-full sm:px-10 px-5 py-4 text-white bg-[#1D1D1D] tracking-wide text-center sm:text-left"
+  >
+    <h1 class="font-semibold text-2xl">IT BERRIES</h1>
+    <h6 class="text-sm my-3 text-left">
+      Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius
+      finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero
+      viverra facilisis ut ac est. Morbi commodo, eros in dignissim tempus,
+      lacus odio rutrum augue, in semper sem magna quis tellus. Etiam enim erat,
+      suscipit eu semper a, dictum sit amet elit. Nunc egestas nisi eget enim
+      gravida facilisis. Pellentesque laoreet varius turpis vel pharetra. Ut
+      ante justo, consequat vitae elementum tempor, accumsan nec eros.
+    </h6>
+    <button class="mt-4 border-r-[1px] border-l-[1px] border-white py-2 px-4">
+      READ MORE
+    </button>
+  </div>
 </template>

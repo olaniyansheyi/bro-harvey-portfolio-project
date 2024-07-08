@@ -13,7 +13,7 @@ const handleToggleMenu = () => {
 
 <template>
   <div
-    class="sm:static absolute top-[5%] left-0 right-0 z-[6] sm:bg-transparent bg-black"
+    class="sm:static absolute top-[5%] left-0 right-0 sm:bg-transparent bg-black z-[8]"
   >
     <div
       class="w-full flex justify-between items-start text-white px-8 pb-4 border-white relative"
