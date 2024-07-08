@@ -2,13 +2,20 @@
 import linkdinWhite from "~/public/img/linkdin-white.png";
 import githubWhite from "~/public/img/github-white.png";
 import atWhite from "~/public/img/at-white.png";
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 </script>
 
 <template>
   <div
     class="py-12 text-center w-full bg-[#1A1A1A] text-white flex justify-center items-center gap-y-5 flex-col"
   >
-    <button class="px-4 py-2 rounded-md border-primary border-[1px] text-sm">
+    <button
+      @click="scrollToTop"
+      class="px-4 py-2 rounded-md border-primary border-[1px] text-sm"
+    >
       BACK TO TOP
     </button>
     <div class="flex gap-x-5 items-center justify-center mt-3">

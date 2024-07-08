@@ -9,6 +9,13 @@ const openMenu = ref(false);
 const handleToggleMenu = () => {
   openMenu.value = !openMenu.value;
 };
+
+const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
 </script>
 
 <template>
@@ -29,16 +36,52 @@ const handleToggleMenu = () => {
         "
         class="z-[10]"
       >
-        <Nuxt>About me</Nuxt>
-        <Nuxt>Skills</Nuxt>
-        <Nuxt>Portfolio</Nuxt>
+        <a
+          href="#about"
+          @click.prevent="
+            () => {
+              scrollToSection('about');
+              if (openMenu) handleToggleMenu();
+            }
+          "
+          >About me</a
+        >
+        <a
+          href="#skill"
+          @click.prevent="
+            () => {
+              scrollToSection('skill');
+              if (openMenu) handleToggleMenu();
+            }
+          "
+          >Skills</a
+        >
+        <a
+          href="#portfolio"
+          @click.prevent="
+            () => {
+              scrollToSection('portfolio');
+              if (openMenu) handleToggleMenu();
+            }
+          "
+          >Portfolio</a
+        >
         <button
           class="text-black rounded-full p-2 bg-white text-xs"
           :class="
             openMenu ? 'w-full rounded-none shadow-lg shadow-black/60 ' : ''
           "
         >
-          Contact Me
+          <a
+            href="#contact"
+            @click.prevent="
+              () => {
+                scrollToSection('contact');
+                if (openMenu) handleToggleMenu();
+              }
+            "
+            >Contact Me</a
+          >
         </button>
       </nav>
       <div @click="handleToggleMenu" class="cursor-pointer sm:hidden">

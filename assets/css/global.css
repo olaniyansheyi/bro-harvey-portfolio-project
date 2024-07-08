@@ -38,3 +38,7 @@ body {
   color: #fffbfb !important;
   border-color: #fffbfb !important;
 }
+
+html {
+  scroll-behavior: smooth;
+}

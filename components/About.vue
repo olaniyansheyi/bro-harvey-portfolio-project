@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:my-16 my-10 text-center px-8 w-full">
+  <div class="sm:my-16 my-10 text-center px-8 w-full" id="about">
     <Button> ABOUT ME </Button>
     <p
       class="text-[#000000] text-left tracking-wider mt-10 sm:text-center lg:w-[55%] lg:mx-auto"

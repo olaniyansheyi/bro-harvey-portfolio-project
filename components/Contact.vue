@@ -1,6 +1,7 @@
 <template>
   <div
     class="lg:w-[55%] px-10 gap-y-6 text-center my-12 py-12 flex justify-center flex-col items-center mx-auto"
+    id="contact"
   >
     <div>
       <Button> CONTACT </Button>
