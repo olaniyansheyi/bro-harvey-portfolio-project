@@ -35,6 +35,6 @@ body {
 }
 
 .activeTab {
-  color: #fffbfb;
-  border-color: #fffbfb;
+  color: #fffbfb !important;
+  border-color: #fffbfb !important;
 }
