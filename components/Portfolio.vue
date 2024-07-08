@@ -1,6 +1,52 @@
 <script setup>
 import project1 from "~/public/img/project-1.png";
 import project3 from "~/public/img/project-3.png";
+import project2 from "~/public/img/project-2.png";
+const projects = [
+  {
+    id: 1,
+    img: project3,
+    category: "CODED",
+  },
+  {
+    id: 2,
+    img: project2,
+    category: "CODED",
+  },
+  {
+    id: 3,
+    img: project1,
+    category: "CODED",
+  },
+  {
+    id: 4,
+    img: project2,
+    category: "DESIGNED",
+  },
+  {
+    id: 5,
+    img: project3,
+    category: "DESIGNED",
+  },
+  {
+    id: 6,
+    img: project1,
+    category: "DESIGNED",
+  },
+];
+
+const activeTab = ref("ALL");
+
+const setActiveTab = (tab) => {
+  activeTab.value = tab;
+};
+
+const filteredProjects = computed(() => {
+  if (activeTab.value === "ALL") {
+    return projects;
+  }
+  return projects.filter((project) => project.category === activeTab.value);
+});
 </script>
 
 <template>
@@ -16,16 +62,22 @@ import project3 from "~/public/img/project-3.png";
       class="mx-auto flex flex-wrap sm:w-[50%] sm:px-0 px-10 justify-center items-center gap-y-4"
     >
       <button
+        :class="{ activeTab: activeTab === 'ALL' }"
+        @click="setActiveTab('ALL')"
         class="text-[#7C7C7C] border-b-[1px] border-[#7C7C7C] px-10 text-md font-semibold py-1 active-tab"
       >
         ALL
       </button>
       <button
+        :class="{ activeTab: activeTab === 'CODED' }"
+        @click="setActiveTab('CODED')"
         class="text-[#7C7C7C] border-b-[1px] border-[#7C7C7C] px-10 text-md font-semibold py-1"
       >
         CODED
       </button>
       <button
+        :class="{ activeTab: activeTab === 'DESIGNED' }"
+        @click="setActiveTab('DESIGNED')"
         class="text-[#7C7C7C] border-b-[1px] border-[#7C7C7C] px-10 text-md font-semibold py-1"
       >
         DESIGN
@@ -34,9 +86,11 @@ import project3 from "~/public/img/project-3.png";
 
     <div class="mt-16 flex justify-center items-center w-full flex-wrap">
       <div
+        v-for="project in filteredProjects"
+        :key="project.id"
         class="lg:w-[33.3%] sm:w-[50%] z-[11] overflow-hidden group relative"
       >
-        <img :src="project1" alt="" />
+        <img :src="project.img" alt="" />
         <div
           class="absolute inset-0 bg-black/80 bg-opacity-60 opacity-0 transition-opacity duration-300 flex items-center justify-center group-hover:opacity-100 sm:py-10 h-full"
         >
@@ -44,7 +98,7 @@ import project3 from "~/public/img/project-3.png";
             class="text-white text-center flex justify-center items-center flex-col gap-y-2 tracking-wider"
           >
             <p class="text-sm">coded. designer</p>
-            <h3 class="font-semibold text-xl">Project Description</h3>
+            <h3 class="font-semibold text-xl">eatsome.</h3>
             <p class="text-sm">
               Restaurant browsing in React.js (Using Yelp API)
             </p>
@@ -66,26 +120,3 @@ import project3 from "~/public/img/project-3.png";
     </div>
   </div>
 </template>
-
-<!-- const projects = ref([
-  { id: 1, name: "Project 1", img: "path/to/image1.jpg", category: "new" },
-  { id: 2, name: "Project 2", img: "path/to/image2.jpg", category: "old" },
-  { id: 3, name: "Project 3", img: "path/to/image3.jpg", category: "new" },
-  { id: 4, name: "Project 4", img: "path/to/image4.jpg", category: "old" },
-  { id: 5, name: "Project 5", img: "path/to/image5.jpg", category: "new" },
-  { id: 6, name: "Project 6", img: "path/to/image6.jpg", category: "old" },
-]);
-
-const activeTab = ref('all');
-
-const setActiveTab = (tab) => {
-  activeTab.value = tab;
-};
-
-const filteredProjects = computed(() => {
-  if (activeTab.value === 'all') {
-    return projects.value;
-  }
-  return projects.value.filter(project => project.category === activeTab.value);
-});
-</script> -->
