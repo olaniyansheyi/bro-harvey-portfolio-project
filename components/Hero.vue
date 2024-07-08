@@ -39,7 +39,9 @@ import heroFooterBgMobile from "~/public/img/hero-footer-img-mobile.png";
         </div>
       </div>
     </div>
-    <div class="w-[50%] lg:h-[87%] absolute bottom-0 right-2">
+    <div
+      class="lg:w-[35rem] sm:w-[28rem] h-auto absolute bottom-0 right-2 lg:right-[15%]"
+    >
       <img class="w-full h-full" :src="me" alt="" />
     </div>
   </div>

@@ -1,3 +1,8 @@
 <template>
-  <Hero />
+  <div class="pb-20">
+    <Hero />
+    <About />
+    <Service />
+    <Skills />
+  </div>
 </template>

@@ -27,6 +27,7 @@ const handleToggleMenu = () => {
             ? ' flex flex-col absolute bottom-0 left-0 right-0 justify-start items-center h-auto gap-y-5 border-white pt-6 border-t-[1px]'
             : 'hidden sm:flex items-center justify-center gap-x-6 lg:gap-x-10 tracking-wide font-semibold text-xs'
         "
+        class="z-[10]"
       >
         <Nuxt>About me</Nuxt>
         <Nuxt>Skills</Nuxt>
