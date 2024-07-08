@@ -1,33 +1,37 @@
 <script setup>
+import project1 from "~/public/project-01.png";
+import project2 from "~/public/project-2.png";
+import project3 from "~/public/project-3.png";
+
 const projects = [
   {
     id: 1,
-    img: "/img/project-3.png",
+    img: project3,
     category: "CODED",
   },
   {
     id: 2,
-    img: "/img/project-2.png",
+    img: project2,
     category: "CODED",
   },
   {
     id: 3,
-    img: "/img/project-01.png",
+    img: project1,
     category: "CODED",
   },
   {
     id: 4,
-    img: "/img/project-2.png",
+    img: project2,
     category: "DESIGNED",
   },
   {
     id: 5,
-    img: "/img/project-3.png",
+    img: project3,
     category: "DESIGNED",
   },
   {
     id: 6,
-    img: "/img/project-01.png",
+    img: project1,
     category: "DESIGNED",
   },
 ];
