@@ -1,9 +1,11 @@
 <template>
-  <div class="pb-20">
+  <div>
     <Hero />
     <About />
     <Service />
     <Skills />
     <Portfolio />
+    <Contact />
+    <Footer />
   </div>
 </template>
