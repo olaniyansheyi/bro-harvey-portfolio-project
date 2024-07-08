@@ -1,5 +1,5 @@
 <script setup>
-import project1 from "~/public/img/project-first.png";
+import project01 from "~/public/img/project-01.png";
 import project3 from "~/public/img/project-3.png";
 import project2 from "~/public/img/project-2.png";
 const projects = [
@@ -15,7 +15,7 @@ const projects = [
   },
   {
     id: 3,
-    img: project1,
+    img: project01,
     category: "CODED",
   },
   {
@@ -30,7 +30,7 @@ const projects = [
   },
   {
     id: 6,
-    img: project1,
+    img: project01,
     category: "DESIGNED",
   },
 ];
