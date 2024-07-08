@@ -33,3 +33,8 @@ body {
 .hero-bg-mobile {
   background: linear-gradient(168deg, black 63%, #d7d7d7 63%);
 }
+
+.active-tab {
+  color: #fffbfb;
+  border-color: #fffbfb;
+}

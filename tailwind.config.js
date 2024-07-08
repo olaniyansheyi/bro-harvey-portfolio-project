@@ -11,6 +11,7 @@ export default {
     extend: {
       backgroundImage: {
         heroSlantImg: "url('~/public/img/hero-slant-bg.png')",
+        projectHeaderImg: "url('~/public/img/project-header-img.png')",
       },
       colors: {
         primary: "#909090",

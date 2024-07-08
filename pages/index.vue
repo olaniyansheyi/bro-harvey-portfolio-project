@@ -4,5 +4,6 @@
     <About />
     <Service />
     <Skills />
+    <Portfolio />
   </div>
 </template>
