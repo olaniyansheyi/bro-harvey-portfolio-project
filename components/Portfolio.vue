@@ -1,7 +1,11 @@
 <script setup>
-import project01 from "~/assets/project-01.png";
-import project3 from "~/assets/project-3.png";
-import project2 from "~/assets/project-2.png";
+// import project01 from "~/assets/project-01.png";
+// import project3 from "~/assets/project-3.png";
+// import project2 from "~/assets/project-2.png";
+const project01 = "/img/project-01.png";
+const project3 = "/img/project-3.png";
+const project2 = "/img/project-2.png";
+
 const projects = [
   {
     id: 1,
