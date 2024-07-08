@@ -34,6 +34,10 @@ body {
   background: linear-gradient(168deg, black 63%, #d7d7d7 63%);
 }
 
+.hero-bg-mobile2 {
+  background: linear-gradient(168deg, transparent 63%, rgba(0, 0, 0, 0.56) 63%);
+}
+
 .activeTab {
   color: #fffbfb !important;
   border-color: #fffbfb !important;
@@ -42,3 +46,4 @@ body {
 html {
   scroll-behavior: smooth;
 }
+/* rgba(0, 0, 0, 0.56) */

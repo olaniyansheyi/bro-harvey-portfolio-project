@@ -6,7 +6,6 @@ import me from "~/public/img/me.png";
 import linkdinWhite from "~/public/img/linkdin-white.png";
 import githubWhite from "~/public/img/github-white.png";
 import atWhite from "~/public/img/at-white.png";
-import heroFooterBgMobile from "~/public/img/hero-footer-img-mobile.png";
 </script>
 
 <template>
@@ -54,13 +53,10 @@ import heroFooterBgMobile from "~/public/img/hero-footer-img-mobile.png";
     <div class="flex justify-end items-end h-full w-full">
       <img class="z-[2]" :src="me" alt="" />
     </div>
-    <img
-      class="w-full absolute bottom-0 left-0 right-0 z-[3]"
-      :src="heroFooterBgMobile"
-      alt=""
-    />
+
+    <div class="hero-bg-mobile2 absolute inset-0 w-full z-[5]"></div>
     <div
-      class="absolute bottom-5 right-5 left-6 text-white z-[4] items-center flex gap-x-4 justify-between"
+      class="absolute bottom-5 right-5 left-6 text-white z-[10] items-center flex gap-x-4 justify-between"
     >
       <div>
         <h3 class="tracking-wide font-semibold text-xl">Hi, I am</h3>
