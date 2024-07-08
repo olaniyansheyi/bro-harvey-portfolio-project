@@ -74,7 +74,7 @@ import heroFooterBgMobile from "~/public/img/hero-footer-img-mobile.png";
   </div>
 
   <div
-    class="w-full sm:px-10 px-5 py-4 text-white bg-[#1D1D1D] tracking-wide text-center sm:text-left"
+    class="w-full sm:px-10 px-5 py-4 text-white bg-[#1D1D1D] tracking-wider text-center sm:text-left"
   >
     <h1 class="font-semibold text-2xl">IT BERRIES</h1>
     <h6 class="text-sm my-3 text-left">
