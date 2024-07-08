@@ -1,5 +1,5 @@
 <script setup>
-import project1 from "~/public/img/project-1.png";
+import project1 from "~/public/img/project-first.png";
 import project3 from "~/public/img/project-3.png";
 import project2 from "~/public/img/project-2.png";
 const projects = [
