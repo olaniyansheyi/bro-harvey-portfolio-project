@@ -1,5 +1,5 @@
 <script setup>
-import project01 from "~/public/img/project-01.png";
+// import project01 from "~/public/img/project-01.png";
 import project3 from "~/public/img/project-3.png";
 import project2 from "~/public/img/project-2.png";
 const projects = [
@@ -13,11 +13,11 @@ const projects = [
     img: project2,
     category: "CODED",
   },
-  {
-    id: 3,
-    img: project01,
-    category: "CODED",
-  },
+  // {
+  //   id: 3,
+  //   img: project01,
+  //   category: "CODED",
+  // },
   {
     id: 4,
     img: project2,
@@ -28,11 +28,11 @@ const projects = [
     img: project3,
     category: "DESIGNED",
   },
-  {
-    id: 6,
-    img: project01,
-    category: "DESIGNED",
-  },
+  // {
+  //   id: 6,
+  //   img: project01,
+  //   category: "DESIGNED",
+  // },
 ];
 
 const activeTab = ref("ALL");
